@@ -58,9 +58,16 @@ int probe (const char *device, int removable, int readonly) {
 		ret = FSUR_UNRECOGNIZED;
 	} else {
 		hfsvolent ent;
-		if (hfs_vstat(vol, &ent) == 0)
-            // WARNING!! apparently stdout is a pipe!!!
-			printf("%s\n", ent.name); // TODO: convert to UTF8
+    if (hfs_vstat(vol, &ent) == 0) {
+      for(int i=0;ent.name[i]!='\0';i++){
+        if(ent.name[i]=='/'){
+          ent.name[i] = ':';
+        }
+      }
+      
+      // WARNING!! apparently stdout is a pipe!!!
+      printf("%s\n", ent.name); // TODO: convert to UTF8
+    }
 	}
 	hfs_umount(vol);
 	return ret;

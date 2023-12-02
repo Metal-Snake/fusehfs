@@ -191,9 +191,16 @@ int main(int argc, char* argv[], char* envp[], char** exec_path) {
 	hfs_umount(NULL);
 
 	// MacFUSE options
-    char volnameOption[128] = "-ovolname=";
+  char volnameOption[128] = "-ovolname=";
 	char *volname = iconv_convert(vstat.name, options.encoding, "UTF-8");
-	if (volname == NULL) {
+	
+  for(int i=0;volname[i]!='\0';i++){
+    if(volname[i]=='/'){
+      volname[i] = ':';
+    }
+  }
+  
+  if (volname == NULL) {
 		perror("iconv");
 		return 1;
 	}
