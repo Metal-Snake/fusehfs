@@ -21,7 +21,7 @@
 #include "log.h"
 
 #define MAC_FIRST_USER 501
-#define MEGABYTE 1 << 20
+#define MEGABYTE 10 << 20
 
 int log_to_file() {
     char logpath[PATH_MAX];
@@ -33,7 +33,7 @@ int log_to_file() {
     strncpy(logpath, home, sizeof(logpath));
     strcat(logpath, LOGPATH);
     
-    // delete old log if larger than 1MB so it doesn't get out of control
+    // delete old log if larger than 10MB so it doesn't get out of control
     // if we can't...that's probably fine.
     struct stat st;
     int rc = stat(logpath, &st);
