@@ -41,8 +41,8 @@
 		5DB628DA278614B800FCDEE2 /* fusefs_hfs.util in Resources */ = {isa = PBXBuildFile; fileRef = 28E2E02111496478002DF364 /* fusefs_hfs.util */; };
 		5DB628DB2786157700FCDEE2 /* mount_fusefs_hfs in Resources */ = {isa = PBXBuildFile; fileRef = 8DD76FB20486AB0100D96B5E /* mount_fusefs_hfs */; };
 		5DB628DD2786158C00FCDEE2 /* hfsck in Resources */ = {isa = PBXBuildFile; fileRef = 28E72DD01149585D00084372 /* hfsck */; };
-		F642B4AF2B1B482B0041CE72 /* libfuse-t-1.0.32.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F642B4AE2B1B482B0041CE72 /* libfuse-t-1.0.32.dylib */; };
-		F642B4B02B1B482B0041CE72 /* libfuse-t-1.0.32.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F642B4AE2B1B482B0041CE72 /* libfuse-t-1.0.32.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F642B4AF2B1B482B0041CE72 /* libfuse-t-1.0.33.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F642B4AE2B1B482B0041CE72 /* libfuse-t-1.0.33.dylib */; };
+		F642B4B02B1B482B0041CE72 /* libfuse-t-1.0.33.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F642B4AE2B1B482B0041CE72 /* libfuse-t-1.0.33.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		FFD708650EE669A60026C014 /* fusefs_hfs.c in Sources */ = {isa = PBXBuildFile; fileRef = FFD708640EE669A60026C014 /* fusefs_hfs.c */; };
 		FFD708760EE66DA70026C014 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FFD708750EE66DA70026C014 /* main.c */; };
 /* End PBXBuildFile section */
@@ -124,7 +124,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F642B4B02B1B482B0041CE72 /* libfuse-t-1.0.32.dylib in Embed Libraries */,
+				F642B4B02B1B482B0041CE72 /* libfuse-t-1.0.33.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +358,7 @@
 		5DB628D727860C6200FCDEE2 /* libfuse_ino64.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfuse_ino64.2.dylib; path = ../../../../usr/local/lib/libfuse_ino64.2.dylib; sourceTree = "<group>"; };
 		639BA9851675AA9E00A9518F /* fuse_wait copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "fuse_wait copy"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD76FB20486AB0100D96B5E /* mount_fusefs_hfs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mount_fusefs_hfs; sourceTree = BUILT_PRODUCTS_DIR; };
-		F642B4AE2B1B482B0041CE72 /* libfuse-t-1.0.32.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libfuse-t-1.0.32.dylib"; path = "../../../../../../Library/Application Support/fuse-t/lib/libfuse-t-1.0.32.dylib"; sourceTree = "<group>"; };
+		F642B4AE2B1B482B0041CE72 /* libfuse-t-1.0.33.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libfuse-t-1.0.33.dylib"; path = "../../../../../../Library/Application Support/fuse-t/lib/libfuse-t-1.0.33.dylib"; sourceTree = "<group>"; };
 		FFD708640EE669A60026C014 /* fusefs_hfs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fusefs_hfs.c; sourceTree = "<group>"; };
 		FFD708750EE66DA70026C014 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -392,7 +392,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F642B4AF2B1B482B0041CE72 /* libfuse-t-1.0.32.dylib in Frameworks */,
+				F642B4AF2B1B482B0041CE72 /* libfuse-t-1.0.33.dylib in Frameworks */,
 				5D559F0B279BAD91006F44CA /* libiconv.2.tbd in Frameworks */,
 				289FB925113BE5CE00409A62 /* libhfs.a in Frameworks */,
 			);
@@ -749,7 +749,7 @@
 		5DB628D627860C6200FCDEE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F642B4AE2B1B482B0041CE72 /* libfuse-t-1.0.32.dylib */,
+				F642B4AE2B1B482B0041CE72 /* libfuse-t-1.0.33.dylib */,
 				5D559F0A279BAD91006F44CA /* libiconv.2.tbd */,
 				5D559F08279BAABC006F44CA /* libfuse.2.dylib */,
 				5DB628D727860C6200FCDEE2 /* libfuse_ino64.2.dylib */,
